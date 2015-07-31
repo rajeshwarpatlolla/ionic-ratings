@@ -89,6 +89,14 @@ You can customize font, width and height of the icons using these classes.
 ![ionic-ratings icon on](https://lh3.googleusercontent.com/0eaBAyA98Xmz0DypNRFdQs7k_pz_HCJQT87XPoh8h1U=w397-h137-no "ionic-ratings-icon-on")
 ![ionic-ratings icon off](https://lh3.googleusercontent.com/adoA1shQtGymzw72jKmN3p0Hv6P6jrYkbF7m7edhp_E=w402-h143-no "ionic-ratings-icon-off")
 
+You can also use the following css class for changing the properties of each icon.
+
+````css    
+    .ionic_ratings .icon {
+     font-size: 50px;
+    }
+````
+
 ##Screen Shots:
 
 Once you are successfully done with the above steps, you should be able to see the below screen shots.

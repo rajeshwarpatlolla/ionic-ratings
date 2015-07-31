@@ -22,8 +22,7 @@ angular.module('ionic-ratings', ['ionic'])
       '<span class="icon {{iconOff}} ionic_rating_icon_off" ng-style="iconOffColor" ng-click="ratingsClicked(5)" ng-show="rating < 5"></span>' +
       '<span class="icon {{iconOn}} ionic_rating_icon_on" ng-style="iconOnColor" ng-click="ratingsUnClicked(5)" ng-show="rating > 4"></span></div>',
       scope: {
-        ratingsObj: '=ratingsobj',
-        callback: '=callback'
+        ratingsObj: '=ratingsobj'
       },
       link: function(scope, element, attrs) {
 
