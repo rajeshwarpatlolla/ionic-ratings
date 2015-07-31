@@ -37,9 +37,9 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
 ##### 4) In your controller, please define the object which you need to pass to the directive.
 
 ````javascript
-.controller('HomeCtrl', ['$scope', 'ionicToast', function($scope, ionicToast) {
+.controller('CtrlName', ['$scope', function($scope) {
    
-      $scope.ratingObject = {
+      $scope.ratingsObject = {
         iconOn : 'ion-ios-star',
         iconOff : 'ion-ios-star-outline',
         iconOnColor: 'rgb(200, 200, 100)',
@@ -47,11 +47,11 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
         rating:  2,
         minRating:1,
         callback: function(rating) {
-          $scope.ratingCallback(rating);
+          $scope.ratingsCallback(rating);
         }
       };
   
-      $scope.ratingCallback = function(rating) {
+      $scope.ratingsCallback = function(rating) {
         console.log('Selected rating is : ', rating);
       };
 
@@ -78,7 +78,7 @@ g) `callback` : This is a mandatory property. This will be called when the user 
 ##### 5) In your template you can use like below
 
 ````html
-<ionic-ratings ratingobj='ratingObject'></ionic-ratings>
+<ionic-ratings ratingsobj='ratingsObject'></ionic-ratings>
 ````
 
 ##CSS Classes:
@@ -86,14 +86,14 @@ You can customize font, width and height of the icons using these classes.
 ##### 1) ionic_rating_icon_on
 ##### 2) ionic_rating_icon_off
 
-![ionic-ratings icon on](https://lh3.googleusercontent.com/kb29cRJhBAt_S2ERxAxMDGyVsMtJXrzTDdnQKlNpkzI=w476-h136-no "ionic-ratings-icon-on")
-![ionic-ratings icon off](https://lh3.googleusercontent.com/vd-bVZsmDwNN9pKleZit3i851SSpoMyQVDIn4GVE-9E=w567-h139-no "ionic-ratings-icon-off")
+![ionic-ratings icon on](https://lh3.googleusercontent.com/0eaBAyA98Xmz0DypNRFdQs7k_pz_HCJQT87XPoh8h1U=w397-h137-no "ionic-ratings-icon-on")
+![ionic-ratings icon off](https://lh3.googleusercontent.com/adoA1shQtGymzw72jKmN3p0Hv6P6jrYkbF7m7edhp_E=w402-h143-no "ionic-ratings-icon-off")
 
 ##Screen Shots:
 
 Once you are successfully done with the above steps, you should be able to see the below screen shots.
  
-![ionic-ratings buttons](https://lh3.googleusercontent.com/OCiqH7AiQcon-SWrJ1NKr6N2zueciZso8g4UC3SYLSE=w447-h111-no "ionic-ratings")
+![ionic-ratings buttons](https://lh3.googleusercontent.com/iUEJXbDYAAQK6xXmEA6FIRvRsKWLrFsrVjMGolsRn8E=w392-h130-no "ionic-ratings")
 
 ##Versions:
 
