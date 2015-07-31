@@ -23,7 +23,7 @@ This will install the latest version released.
 
 ````html 
 <!-- path to ionic/angularjs js -->
-<script src="lib/ionic-toast/dist/ionic-ratings.js"></script>
+<script src="lib/ionic-ratings/dist/ionic-ratings.js"></script>
 ````
 
 ##### 3) In your application module inject the dependency `ionic-ratings`, in order to work with it.
