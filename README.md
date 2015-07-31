@@ -2,7 +2,9 @@
 
 This is an `ionic-ratings` bower component which can be used with any Ionic framework's application.
 
-[View Demo](http://codepen.io/rajeshwarpatlolla/pen/vOQJej "Demo") 
+[View codepen Demo](http://codepen.io/rajeshwarpatlolla/pen/vOQJej "codepen demo") 
+
+[View plunker Demo](http://plnkr.co/edit/YjpF7hqeMK0HGjeklc6z?p=preview "plunker demo") 
 
 
 ##Prerequisites.
