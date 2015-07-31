@@ -1,17 +1,17 @@
 {
   "name": "ionic-ratings",
   "version": "0.1.0",
-  "description": "A rating plugin for IONIC framework",
+  "description": "A ratings plugin for IONIC framework",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github-personal:rajeshwarpatlolla/ionic-rating.git"
+    "url": "git@github-personal:rajeshwarpatlolla/ionic-ratings.git"
   },
   "keywords": [
-    "ionic-rating"
+    "ionic-ratings"
   ],
   "author": "rajeshwar.patlolla@gmail.com",
   "license": "MIT",

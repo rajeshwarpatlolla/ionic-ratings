@@ -4,18 +4,19 @@
   "authors": [
     "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>"
   ],
-  "description": "A rating plugin for IONIC framework",
+  "description": "A ratings plugin for IONIC framework",
   "main": [
-    "./dist/ionic-rating.js"
+    "./dist/ionic-ratings.js"
   ],
   "keywords": [
-    "ionic-rating",
+    "ionic-ratings",
     "ionic",
     "rating",
-    "rating for ionic"
+    "ratings",
+    "ratings for ionic"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/rajeshwarpatlolla/ionic-rating",
+  "homepage": "https://github.com/rajeshwarpatlolla/ionic-ratings",
   "ignore": [
     "**/.*",
     "node_modules",
