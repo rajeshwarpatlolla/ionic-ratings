@@ -37,7 +37,7 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
 ##### 4) In your controller, please define the object which you need to pass to the directive.
 
 ````javascript
-.controller('CtrlName', ['$scope', function($scope) {
+.controller('ControllerName', ['$scope', function($scope) {
    
       $scope.ratingsObject = {
         iconOn : 'ion-ios-star',
