@@ -2,7 +2,7 @@
 
 This is an `ionic-ratings` bower component which can be used with any Ionic framework's application.
 
-[View Demo](http://codepen.io/rajeshwarpatlolla/pen/vOQJej?editors=101 "Demo") 
+[View Demo](http://codepen.io/rajeshwarpatlolla/pen/vOQJej "Demo") 
 
 
 ##Prerequisites.
@@ -92,9 +92,9 @@ You can customize font, width and height of the icons using these classes.
 You can also use the following css class for changing the properties of each icon.
 
 ````css    
-    .ionic_ratings .icon {
-     font-size: 50px;
-    }
+  .ionic_ratings .icon {
+    font-size: 50px;
+  }
 ````
 
 ##Screen Shots:

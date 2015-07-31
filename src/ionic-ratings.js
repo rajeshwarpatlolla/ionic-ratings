@@ -1,5 +1,5 @@
 //By Rajeshwar Patlolla
-//https://github.com/rajeshwarpatlolla/ionic-rating
+//https://github.com/rajeshwarpatlolla/ionic-ratings
 //rajeshwar.patlolla@gmail.com
 
 'use strict';
