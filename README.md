@@ -63,19 +63,19 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
 
 The properties of are as follows.
 
-a) **iconOn** (Optional) : You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is active.
+a) **iconOn** (Optional) : You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is active. Default value is `ion-ios-star`.
 
-b) **iconOff** (Optional) : You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is inactive.
+b) **iconOff** (Optional) : You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is inactive. Default value is `ion-ios-star-outline`.
 
-c) **iconOnColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is active.
+c) **iconOnColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is active. The default value is `rgb(200, 200, 100)`.
 
-d) **iconOffColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is inactive.
+d) **iconOffColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is inactive. The default value is `rgb(200, 100, 100)`.
 
-e) **rating** (Optional) : You can pass any values starting from 0. This is the initial/default rating.
+e) **rating** (Optional) : You can pass any values starting from 0. This is the initial/default rating. Default value is `1`.
 
-f) **minRating** (Optional) : You can pass any values starting from 0. This is the minimum value a user can select.
+f) **minRating** (Optional) : You can pass any values starting from 0. This is the minimum value a user can select. Default value is `1`.
 
-g) **readOnly** (Optional) : This takes two values. If you wish to make it read only, give `true` or else you can give `false`.
+g) **readOnly** (Optional) : This takes two values. If you wish to make it read only, give `true` or else you can give `false`. Default value is `false`.
 If you wish to make it read only please add the below css class to your css file.
 
 ````css
@@ -84,7 +84,7 @@ If you wish to make it read only please add the below css class to your css file
   }
 ````
 
-h) **callback** (Mandatory) : This will be called when the user selects a rating. You can get the selected rating in this callback.
+h) **callback** (Mandatory) : This will be called when the user selects a rating. You can get the selected rating in this callback function.
 
 
 ##### 5) In your template you can use like below
