@@ -1,8 +1,10 @@
 {
   "name": "ionic-ratings",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A ratings plugin for IONIC framework",
-  "main": "",
+  "main": [
+    "./dist/ionic-ratings.min.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +18,9 @@
   "author": "rajeshwar.patlolla@gmail.com",
   "license": "MIT",
   "devDependencies": {
+    "del": "^1.2.1",
     "gulp": "^3.9.0",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-rimraf": "^0.1.1",
+    "gulp-concat": "^2.6.0",
     "gulp-uglify": "^1.2.0"
   }
 }

@@ -1,12 +1,12 @@
 {
   "name": "ionic-ratings",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
     "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>"
   ],
   "description": "A ratings plugin for IONIC framework",
   "main": [
-    "./dist/ionic-ratings.js"
+    "./dist/ionic-ratings.min.js"
   ],
   "keywords": [
     "ionic-ratings",

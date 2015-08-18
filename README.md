@@ -42,13 +42,14 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
 .controller('ControllerName', ['$scope', function($scope) {
    
       $scope.ratingsObject = {
-        iconOn : 'ion-ios-star',
-        iconOff : 'ion-ios-star-outline',
-        iconOnColor: 'rgb(200, 200, 100)',
-        iconOffColor:  'rgb(200, 100, 100)',
-        rating:  2,
-        minRating:1,
-        callback: function(rating) {
+        iconOn : 'ion-ios-star',    //Optional
+        iconOff : 'ion-ios-star-outline',   //Optional
+        iconOnColor: 'rgb(200, 200, 100)',  //Optional
+        iconOffColor:  'rgb(200, 100, 100)',    //Optional
+        rating:  2, //Optional
+        minRating:1,    //Optional
+        readOnly : true //Optional
+        callback: function(rating) {    //Mandatory
           $scope.ratingsCallback(rating);
         }
       };
@@ -62,19 +63,28 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
 
 The properties of are as follows.
 
-a) `iconOn` : This is an optional property. You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is active.
+a) **iconOn** (Optional) : You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is active.
 
-b) `iconOff` : This is an optional property. You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is inactive.
+b) **iconOff** (Optional) : You can give any icon from [ionicons](http://ionicons.com/). This icon will be shown when the icon is inactive.
 
-c) `iconOnColor` : This is an optional property. You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is active.
+c) **iconOnColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is active.
 
-c) `iconOffColor` : This is an optional property. You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is inactive.
+d) **iconOffColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is inactive.
 
-e) `rating` : This is an optional property. You can pass any values starting from 0. This is the initial/default rating.
+e) **rating** (Optional) : You can pass any values starting from 0. This is the initial/default rating.
 
-f) `minRating` : This is an optional property. You can pass any values starting from 0. This is the minimum value a user can select.
+f) **minRating** (Optional) : You can pass any values starting from 0. This is the minimum value a user can select.
 
-g) `callback` : This is a mandatory property. This will be called when the user selects a rating. You can get the selected rating in this callback.
+g) **readOnly** (Optional) : This takes two values. If you wish to make it read only, give `true` or else you can give `false`.
+If you wish to make it read only please add the below css class to your css file.
+
+````css
+  .ionic_ratings .read_only {
+    pointer-events:none !important;
+  }
+````
+
+h) **callback** (Mandatory) : This will be called when the user selects a rating. You can get the selected rating in this callback.
 
 
 ##### 5) In your template you can use like below
@@ -109,6 +119,10 @@ Once you are successfully done with the above steps, you should be able to see t
 
 ### 1) v0.1.0
 The whole `ionic-ratings` component functionality has been implemented, and it can be installed with the command `bower install ionic-ratings --save`
+
+### 2) v0.2.0
+Read only feature added.
+
 
 ##License:
 [MIT](https://github.com/rajeshwarpatlolla/ionic-ratings/blob/master/LICENSE.md "MIT")

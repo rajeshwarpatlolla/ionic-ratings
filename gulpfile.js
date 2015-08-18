@@ -1,16 +1,17 @@
 var gulp = require('gulp');
-var rimraf = require('gulp-rimraf');
+var del = require('del');
 var uglify = require('gulp-uglify');
-var minifycss = require("gulp-minify-css");
+var concat = require('gulp-concat');
 
-gulp.task('js-minify', function () {
+gulp.task('del', function (cb) {
+  del(['dist/**/*'], cb);
+});
+
+gulp.task('js-minify', ['del'], function () {
   gulp.src(['./src/ionic-ratings.js'])
+    .pipe(concat('ionic-ratings.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest("./dist"));
 });
-gulp.task('rimraf', function () {
-  gulp.src('./dist')
-    .pipe(rimraf());
-});
 
-gulp.task('build', ['rimraf', 'js-minify']);
+gulp.task('build', ['js-minify']);
