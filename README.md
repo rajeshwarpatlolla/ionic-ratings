@@ -25,7 +25,9 @@ This will install the latest version released.
 
 ````html 
 <!-- path to ionic/angularjs js -->
-<script src="lib/ionic-ratings/dist/ionic-ratings.js"></script>
+<script src="lib/ionic-ratings/dist/ionic-ratings.min.js"></script>
+or
+<script src="lib/ionic-ratings/src/ionic-ratings.js"></script>
 ````
 
 ##### 3) In your application module inject the dependency `ionic-ratings`, in order to work with it.
@@ -42,13 +44,13 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
 .controller('ControllerName', ['$scope', function($scope) {
    
       $scope.ratingsObject = {
-        iconOn : 'ion-ios-star',    //Optional
-        iconOff : 'ion-ios-star-outline',   //Optional
+        iconOn: 'ion-ios-star',    //Optional
+        iconOff: 'ion-ios-star-outline',   //Optional
         iconOnColor: 'rgb(200, 200, 100)',  //Optional
         iconOffColor:  'rgb(200, 100, 100)',    //Optional
         rating:  2, //Optional
         minRating:1,    //Optional
-        readOnly : true //Optional
+        readOnly: true, //Optional
         callback: function(rating) {    //Mandatory
           $scope.ratingsCallback(rating);
         }
