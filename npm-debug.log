@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/rajeshwar/.nvm/versions/node/v0.12.4/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.13.4
+3 info using node@v0.12.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/rajeshwar/workspace/others/ionic-ratings',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/rajeshwar/.npm/ionic-ratings/0.2.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/rajeshwar/.npm/ionic-ratings/0.2.0/package.tgz',
+9 verbose tar pack   '/Users/rajeshwar/workspace/others/ionic-ratings' ]
+10 verbose tarball /Users/rajeshwar/.npm/ionic-ratings/0.2.0/package.tgz
+11 verbose folder /Users/rajeshwar/workspace/others/ionic-ratings
+12 info prepublish ionic-ratings@0.2.0
+13 verbose stack TypeError: Arguments to path.resolve must be strings
+13 verbose stack     at Object.posix.resolve (path.js:439:13)
+13 verbose stack     at Packer.applyIgnores (/Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/fstream-npm/fstream-npm.js:109:59)
+13 verbose stack     at Packer.<anonymous> (/Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/ignore.js:181:17)
+13 verbose stack     at Array.filter (native)
+13 verbose stack     at Packer.IgnoreReader.filterEntries (/Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/ignore.js:179:31)
+13 verbose stack     at Packer.<anonymous> (/Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/ignore.js:92:12)
+13 verbose stack     at Packer.<anonymous> (/Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/ignore.js:134:5)
+13 verbose stack     at /Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
+13 verbose stack     at fs.js:334:14
+13 verbose stack     at /Users/rajeshwar/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:42:10
+14 verbose cwd /Users/rajeshwar/workspace/others/ionic-ratings
+15 error Darwin 14.0.0
+16 error argv "node" "/Users/rajeshwar/.nvm/versions/node/v0.12.4/bin/npm" "publish"
+17 error node v0.12.4
+18 error npm  v2.13.4
+19 error Arguments to path.resolve must be strings
+20 error If you need help, you may report this error at:
+20 error     <https://github.com/npm/npm/issues>
+21 verbose exit [ 1, true ]

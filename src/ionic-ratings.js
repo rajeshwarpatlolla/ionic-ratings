@@ -82,7 +82,7 @@
           scope.ratingsObj.callback(scope.rating);
         };
       }
-    }
+    };
   }
 
 })();
