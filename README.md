@@ -1,3 +1,5 @@
+[![bitHound Score](https://www.bithound.io/github/rajeshwarpatlolla/ionic-ratings/badges/score.svg)](https://www.bithound.io/github/rajeshwarpatlolla/ionic-ratings)
+
 ##Introduction:
 
 This is an `ionic-ratings` bower component which can be used with any Ionic framework's application.
