@@ -33,8 +33,8 @@
         scope.iconOff = scope.ratingsObj.iconOff || 'ion-ios-star-outline';
         scope.iconOnColor = scope.ratingsObj.iconOnColor || 'rgb(200, 200, 100)';
         scope.iconOffColor = scope.ratingsObj.iconOffColor || 'rgb(200, 100, 100)';
-        scope.rating = scope.ratingsObj.rating || 1;
-        scope.minRating = scope.ratingsObj.minRating || 1;
+        scope.rating = scope.ratingsObj.rating || 0;
+        scope.minRating = scope.ratingsObj.minRating || 0;
         scope.readOnly = scope.ratingsObj.readOnly || false;
 
         //Setting the color for the icon, when it is active
