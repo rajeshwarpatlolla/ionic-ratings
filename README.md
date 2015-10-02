@@ -75,9 +75,9 @@ c) **iconOnColor** (Optional) : You can give any color. The color format can be 
 
 d) **iconOffColor** (Optional) : You can give any color. The color format can be `red` or `#00FF00` or `rgb(200, 200, 100).` This color will be shown when the icon is inactive. The default value is `rgb(200, 100, 100)`.
 
-e) **rating** (Optional) : You can pass any values starting from 0. This is the initial/default rating. Default value is `1`.
+e) **rating** (Optional) : You can pass any values starting from 0. This is the initial/default rating. Default value is `0`.
 
-f) **minRating** (Optional) : You can pass any values starting from 0. This is the minimum value a user can select. Default value is `1`.
+f) **minRating** (Optional) : You can pass any values starting from 0. This is the minimum value a user can select. Default value is `0`.
 
 g) **readOnly** (Optional) : This takes two values. If you wish to make it read only, give `true` or else you can give `false`. Default value is `false`.
 If you wish to make it read only please add the below css class to your css file.
