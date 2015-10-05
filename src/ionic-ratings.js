@@ -55,10 +55,10 @@
 
         //Called when he user clicks on the rating
         scope.ratingsClicked = function(val) {
-          setRating(value, true);
+          setRating(val, true);
         };
         scope.$watch('ratingsObj.rating', function(newValue, oldValue) {
-          setRating(value);
+          setRating(newValue);
         });
         function setRating(val, uiEvent) {
           if (scope.minRating !== 0 && val < scope.minRating) {
