@@ -63,6 +63,9 @@
           scope.prevRating = val;
           scope.ratingsObj.callback(scope.rating);
         };
+        scope.$watch('ratingsObj.rating', function(newValue, oldValue) {
+          scope.ratingsClicked(newValue);
+        });
 
         //Called when he user un clicks on the rating
         scope.ratingsUnClicked = function(val) {
