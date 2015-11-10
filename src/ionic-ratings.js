@@ -55,14 +55,20 @@
 
         //Called when he user clicks on the rating
         scope.ratingsClicked = function(val) {
+          setRating(val, true);
+        };
+        scope.$watch('ratingsObj.rating', function(newValue, oldValue) {
+          setRating(newValue);
+        });
+        function setRating(val, uiEvent) {
           if (scope.minRating !== 0 && val < scope.minRating) {
             scope.rating = scope.minRating;
           } else {
             scope.rating = val;
           }
           scope.prevRating = val;
-          scope.ratingsObj.callback(scope.rating);
-        };
+          if (uiEvent) scope.ratingsObj.callback(scope.rating);
+        }
 
         //Called when he user un clicks on the rating
         scope.ratingsUnClicked = function(val) {
