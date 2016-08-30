@@ -3,8 +3,8 @@ var del = require('del');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
-gulp.task('del', function (cb) {
-  del(['dist/**/*'], cb);
+gulp.task('del', function () {
+  del(['dist/**/*']);
 });
 
 gulp.task('js-minify', ['del'], function () {

@@ -53,13 +53,13 @@ angular.module('mainModuleName', ['ionic', 'ionic-ratings']){
         rating:  2, //Optional
         minRating:1,    //Optional
         readOnly: true, //Optional
-        callback: function(rating) {    //Mandatory
-          $scope.ratingsCallback(rating);
+        callback: function(rating, index) {    //Mandatory
+          $scope.ratingsCallback(rating, index);
         }
       };
   
-      $scope.ratingsCallback = function(rating) {
-        console.log('Selected rating is : ', rating);
+      $scope.ratingsCallback = function(rating, index) {
+        console.log('Selected rating is : ', rating, ' and the index is : ', index);
       };
 
 }])
@@ -93,9 +93,19 @@ h) **callback** (Mandatory) : This will be called when the user selects a rating
 
 ##### 5) In your template you can use like below
 
+Without ng-repeat
+
 ````html
-<ionic-ratings ratingsobj='ratingsObject'></ionic-ratings>
+<ionic-ratings ratingsobj='ratingsObject' index='0'></ionic-ratings>
 ````
+
+Within ng-repeat
+
+````html
+<ionic-ratings ratingsobj='ratingsObject' index='$index'></ionic-ratings>
+````
+
+**index** : This is mandatory property which will help to get the index of the selected item, if this is used in side `ng-repeat`. This will be sent in the callback function. The value of the `index` is zero based similar to `$index`.
 
 ##CSS Classes:
 You can customize font, width and height of the icons using these classes.
@@ -126,6 +136,9 @@ The whole `ionic-ratings` component functionality has been implemented, and it c
 
 ### 2) v0.2.0
 Read only feature added.
+
+### 3) v0.3.0
+[New feature](https://github.com/rajeshwarpatlolla/ionic-ratings/issues/10)
 
 
 ##License:
