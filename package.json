@@ -2,9 +2,7 @@
   "name": "ionic-ratings",
   "version": "0.3.0",
   "description": "A ratings plugin for IONIC framework",
-  "main": [
-    "./dist/ionic-ratings.min.js"
-  ],
+  "main": "./dist/ionic-ratings.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
