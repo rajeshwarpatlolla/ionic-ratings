@@ -2,7 +2,7 @@
 
 ##Introduction:
 
-This is an `ionic-ratings` bower component which can be used with any Ionic framework's application.
+This is an `ionic-ratings` component which can be used with any Ionic framework's application.
 
 [View plunker Demo](http://plnkr.co/edit/YjpF7hqeMK0HGjeklc6z?p=preview "plunker demo") 
 
